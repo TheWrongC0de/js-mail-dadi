@@ -8,7 +8,7 @@ var email , iscritti , presente;
 
 
 //Chiedo la mail
-var email = prompt ("Dichiari la sua email")
+var email = prompt("Dichiari la sua email")
 
 console.log(email);
 
