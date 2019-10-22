@@ -17,16 +17,17 @@ var iscritti = ["scemo@gmail.com" , "scemoo@gmail.com" , "scemooo@gmail.com"];
 
 console.log(iscritti)
 
+var presente = true;
+
 //controllo che sia nella lista
 for(var i = 0; i < iscritti.length; i++){
   if (email == iscritti) {
     presente = true;
-}
+ }
  else (email != iscritti) {
    presente = false;
  }
-
- }
+}
 
 
 if (presente == true) {
