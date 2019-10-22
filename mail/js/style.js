@@ -4,34 +4,29 @@
 
 
 //var usate
-var email , iscritti , presente;
+var email , iscritti , presente , text;
 
 
 //Chiedo la mail
-var email = prompt("Dichiari la sua email")
+email = prompt("Dichiari la sua email")
 
 console.log(email);
 
 //creo la lista
-var iscritti = ["scemo@gmail.com" , "scemoo@gmail.com" , "scemooo@gmail.com"];
+iscritti = ["scemo@gmail.com" , "scemoo@gmail.com" , "scemooo@gmail.com"];
 
 console.log(iscritti)
 
-var presente = true;
+textid = document.getElementById('text');
 
 //controllo che sia nella lista
 for(var i = 0; i < iscritti.length; i++){
-  if (email == iscritti) {
+  if (email == iscritti[i]) {
     presente = true;
  }
- else (email != iscritti) {
-   presente = false;
- }
 }
-
-
 if (presente == true) {
-    text.innerHTML = "Entra pure";
+  textid.innerHTML = "Entra pure";
 } else {
-  text.innerHTML = "Accesso non abilitato";
+  textid.innerHTML = "Accesso non abilitato";
 }
