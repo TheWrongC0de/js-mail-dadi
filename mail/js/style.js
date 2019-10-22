@@ -21,8 +21,13 @@ console.log(iscritti)
 for(var i = 0; i < iscritti.length; i++){
   if (email == iscritti) {
     presente = true;
-  }
 }
+ else (email != iscritti) {
+   presente = false;
+ }
+
+ }
+
 
 if (presente == true) {
     text.innerHTML = "Entra pure";
